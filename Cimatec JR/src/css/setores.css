@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(11, 9, 36);;
+
+}
+.cabecalho {
+    height: 100%;
+    background-color:rgb(11, 9, 36);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+
+.cabecalho .menuCenter {
+    text-align: center;
+    position: relative;
+    right: 20%;
+    margin-bottom: 20px;
+}
+
+.cabecalho .menuCenter li {
+    margin-top: 10px;
+}
+
+h1 {
+    color: white !important;
+    padding: 0 100px;
+    font-size: 30px;
+}
+
+p{
+color: white;
+font-size: 30px;
+}
+
+.saiba-mais {
+    display: block;
+    padding: min(15px, 1vw) 20px;
+    border-radius: 35px;
+    background-color: #ffffff;
+    color: #000000;;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    font-size: 1.3vw;
+    /*Botão saiba mais*/
+}
+#button_div {
+    display: flex;
+    justify-content: center;
+    color: white;
+    /*Botão saiba mais*/
+}
+
+.rodape img {
+    width: max(5.2vw, 50px);
+    height: auto;
+}
+
+
+.site_rodape {
+    box-sizing: border-box;
+    background-color: rgb(11, 9, 36);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    /* Rodapé */
+}

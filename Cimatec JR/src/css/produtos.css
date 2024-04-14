@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(11, 9, 36);
+}
+
+.cabecalho {
+    height: 100%;
+    background-color:rgb(11, 9, 36);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+
+.cabecalho .menuCenter {
+    text-align: center;
+    position: relative;
+    right: 20%;
+    margin-bottom: 20px;
+}
+
+.cabecalho .menuCenter li {
+    margin-top: 10px;
+}
+
+.cabecalho #burguerBox {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+}
+
+.cabecalho .menu li a {
+    padding: 15px;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Quadros {
+    max-width: 1080px;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.Quadros li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5% 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #f5f5f5;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse os limites do quadro */
+}
+
+.Quadros li figure #logo_principal {
+    width: 80%;
+}
+
+.Quadros li .img_icon {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 35%;
+}
+
+.Quadros li .img_icon img {
+    width: 100%;
+    height: auto;
+}
+
+.enviar {
+    width: 100%;
+    padding: 10px 0;
+    background: #ffffff;
+    color: #1D4651;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 1s, color 1s;
+    /* Especificar as propriedades a serem animadas */
+    cursor: pointer;
+}
+
+/* Adicione uma consulta de mídia para ajustar o layout em telas menores */
+@media (max-width: 592px) and (min-height: 703px) {
+    .Quadros li {
+        width: calc(100% - 20px);
+        /* Altere a largura para 100% em telas menores */
+        margin: 10px;
+        /* Adicione um espaçamento entre os quadros */
+    }
+}
+
+.texto{
+    font-size: 100%;
+    display: inline-block;
+    width:65%; /* Ajuste a largura conforme necessário */
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #f5f5f5;
+    text-align: justify;
+}
+
+.rodape img {
+    width: max(5.2vw, 50px);
+    height: auto;
+}
+
+.site_rodape {
+    box-sizing: border-box;
+    background-color: rgb(11, 9, 36);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    /* Rodapé */
+}
